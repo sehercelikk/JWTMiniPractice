@@ -61,14 +61,14 @@ PMC: Update-Database
 ```
 
 ### Login Sayfası
-![Login Sayfası](JWTMiniProject/ProjectImages/jwt0.PNG)
+![Login Sayfası](ProjectImages/jwt0.PNG)
 
 ### Register Sayfası
-![Login Sayfası](JWTMiniProject/ProjectImages/jwt3.PNG)
+![Login Sayfası](ProjectImages/jwt3.PNG)
 
 ### Token Sayfası
-![Login Sayfası](JWTMiniProject/ProjectImages/jwt1.PNG)
-![Login Sayfası](JWTMiniProject/ProjectImages/jwt2.PNG)
+![Login Sayfası](ProjectImages/jwt1.PNG)
+![Login Sayfası](ProjectImages/jwt2.PNG)
 
 
 
