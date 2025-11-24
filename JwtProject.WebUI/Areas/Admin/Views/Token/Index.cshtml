@@ -1,0 +1,40 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    var email = ViewBag.Email as string;
+}
+
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="max-width: 600px; width: 100%; border-radius: 15px;">
+
+        <h2 class="text-center mb-4" style="font-weight: 600; color:#0d6efd;">🔐 Token Oluşturma Paneli</h2>
+
+        <form method="post" asp-action="TokenGenerate" asp-controller="Token">
+            <input type="hidden" name="email" value="@email" />
+
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary btn-lg" style="border-radius: 10px;">
+                    ➕ Token Üret
+                </button>
+            </div>
+        </form>
+
+        @if (Model != null)
+        {
+            <div class="mt-4">
+                <label class="fw-bold mb-2">📌 Üretilen Token</label>
+                <textarea readonly class="form-control p-3"
+                          style="height:250px; resize:none; width:100%; overflow-wrap: break-word;">
+                    @Model
+                    </textarea>
+            </div>
+        }
+
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
